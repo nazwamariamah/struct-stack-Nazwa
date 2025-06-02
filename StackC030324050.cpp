@@ -8,3 +8,7 @@ typedef struct {
     idBuku Buku[MAXSTACK];
     int Count;
 } Stack;
+
+void initializeStack(Stack *S) {
+    S->Count = 0;
+}
