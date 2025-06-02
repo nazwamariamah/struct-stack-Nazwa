@@ -33,5 +33,11 @@ int main(){
     cout <<"Alamat: "<< Nazwa.alamat<<"\n";
     cout <<"ipk: "<< Nazwa.ipk<<"\n";
 
+    inputdata(&Nazwa);
+    cout << "=== Berikut data yang telah anda input ===\n" << endl;
+    cout << "Nama: " << Nazwa.nama << "\n";
+    cout << "Nim: " << Nazwa.nim << "\n";
+    cout << "alamat: " << Nazwa.alamat << "\n";
+    cout << "ipk: " << Nazwa.ipk << "\n";
     
 };
