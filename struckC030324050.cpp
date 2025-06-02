@@ -2,7 +2,6 @@
 #include <string>
 using namespace std;
 
-int main(){
     struct mahasiswa{
         string nim;
         string nama;
@@ -10,7 +9,18 @@ int main(){
         float ipk;
     };
 
+    void inputdata(mahasiswa *prodi_TI){
+    cout << "masukkan nama : ";
+    cin >> prodi_TI->nama;
+    cout << "masukkan nim : ";
+    cin >> prodi_TI->nim;
+    cout << "masukkan alamat : ";
+    cin >> prodi_TI->alamat;
+    cout << "masukkan ipk : ";
+    cin >> prodi_TI->ipk;
+}
 
+int main(){
     mahasiswa Nazwa;
 
     Nazwa.nim="C030324050";
@@ -18,8 +28,10 @@ int main(){
     Nazwa.alamat="JL.Sungai Andai Komp Herlina Perkasa";
     Nazwa.ipk=3.7;
 
-    cout << Nazwa.nim<<"\n";
-    cout << Nazwa.nama<<"\n";
-    cout << Nazwa.alamat<<"\n";
-    cout << Nazwa.ipk<<"\n";
+    cout <<"Nim: "<< Nazwa.nim<<"\n";
+    cout <<"Nama: "<< Nazwa.nama<<"\n";
+    cout <<"Alamat: "<< Nazwa.alamat<<"\n";
+    cout <<"ipk: "<< Nazwa.ipk<<"\n";
+
+    
 };
