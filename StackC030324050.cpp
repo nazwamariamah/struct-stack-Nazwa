@@ -30,3 +30,13 @@ void Pop(Stack *S, idBuku *x) {
         cout << "Buku dengan ID " << *x << " berhasil diambil dari rak." << endl;
     }
 }
+
+void Push(idBuku x, Stack *S) {
+    if (Full(S))
+        cout << "Rak buku penuh! Tidak bisa menambahkan buku lagi!" << endl;
+    else {
+        S->Buku[S->Count] = x;
+        cout << "Buku dengan ID " << x << " berhasil ditambahkan ke rak." << endl;
+        ++(S->Count);
+    }
+}
