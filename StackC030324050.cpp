@@ -40,3 +40,29 @@ void Push(idBuku x, Stack *S) {
         ++(S->Count);
     }
 }
+
+int main() {
+    Stack RakBuku;
+    idBuku *B = RakBuku.Buku;
+
+    initializeStack(&RakBuku);
+
+    Pop(&RakBuku, B);           
+    Push(101, &RakBuku);        
+    Push(202, &RakBuku);        
+    Push(303, &RakBuku);        
+    Push(404, &RakBuku);        
+    Pop(&RakBuku, B);           
+
+    Push(505, &RakBuku);        
+    Push(606, &RakBuku);        
+    Push(707, &RakBuku);        
+    Push(808, &RakBuku);        
+    Push(909, &RakBuku);        
+    Push(1000, &RakBuku);       
+    Push(1200, &RakBuku);       
+
+    Pop(&RakBuku, B);          
+    Push(1111, &RakBuku);       
+
+};
