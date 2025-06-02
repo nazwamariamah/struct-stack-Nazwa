@@ -20,3 +20,13 @@ int Full(Stack *S) {
 int Empty(Stack *S) {
     return (S->Count == 0);
 }
+
+void Pop(Stack *S, idBuku *x) {
+    if (Empty(S))
+        cout << "Rak buku kosong! Tidak ada buku yang bisa diambil." << endl;
+    else {
+        --(S->Count);
+        *x = S->Buku[S->Count];
+        cout << "Buku dengan ID " << *x << " berhasil diambil dari rak." << endl;
+    }
+}
